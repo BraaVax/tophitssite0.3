@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP HITS MUSIC</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { margin:0; font-family:Arial,sans-serif; background-color:#000; color:#fff; }
+        header { background-color:#111; padding:20px; text-align:center; }
+        header img { height:60px; }
+        nav { margin-top:10px; }
+        nav a { color:#fff; text-decoration:none; margin:0 15px; font-weight:bold; }
+        .hero { text-align:center; padding:50px 20px; }
+        .hero h1 { font-size:2.5rem; margin-bottom:20px; }
+        .artists { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; padding:40px; }
+        .artist-card { background-color:#111; border-radius:10px; text-align:center; padding:20px; cursor:pointer; }
+        .artist-card img { width:100%; border-radius:10px; }
+        .artist-card h3 { margin-top:15px; }
+        .modal { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); overflow:auto; z-index:10; }
+        .modal-content { background-color:#111; margin:50px auto; padding:20px; border-radius:10px; max-width:800px; }
+        .close { color:#fff; float:right; font-size:28px; font-weight:bold; cursor:pointer; }
+        .tabs { display:flex; margin-top:20px; border-bottom:1px solid #444; }
+        .tab { padding:10px 20px; cursor:pointer; border-radius:5px 5px 0 0; margin-right:5px; background-color:#222; }
+        .tab.active { background-color:#000; border-bottom:2px solid #fff; }
+        .tab-content { display:none; padding:20px 0; }
+        .tab-content.active { display:block; }
+        .gallery img { width:100px; margin:5px; border-radius:5px; }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo TOP HITS MUSIC">
+        <nav>
+            <a href="#eventos">Eventos</a>
+            <a href="#artistas">Artistas</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Bem-vindo à TOP HITS MUSIC</h1>
+        <p>Produzindo grandes eventos e cuidando das carreiras dos nossos talentos.</p>
+    </section>
+
+    <section class="eventos">
+        <h1>EVENTOS</h1>
+        <P>CONTRATE A TOP HITS MUSIC PARA PRODUZIR SEU EVENTO</P>
+        <a href="https://wa.link/pcb1li" target="_blank">
+            <button>CONTRATE A TOP HITS</button>
+        </a>
+    </section>
+
+    <section class="artistastext">
+        <h1>NOSSOS ARTISTAS</h1>
+    </section>
+
+    <section id="artistas" class="artists">
+        <div class="artist-card" data-modal="modal-clara">
+            <img src="img/clara.png" alt="Clara Garcia">
+            <h3>Clara Garcia</h3>
+        </div>
+        <div class="artist-card" data-modal="modal-pagode">
+            <img src="img/pagode.png" alt="Pagode da Japa">
+            <h3>Pagode da Japa</h3>
+        </div>
+        <div class="artist-card" data-modal="modal-cinho">
+            <img src="img/cinho.png" alt="Cinho">
+            <h3>Cinho</h3>
+        </div>
+    </section>
+
+    <!-- Modais -->
+    <div id="modal-clara" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Clara Garcia</h2>
+            <div class="tabs">
+                <div class="tab active" data-tab="bio-clara">Biografia</div>
+                <div class="tab" data-tab="gallery-clara">Galeria</div>
+                <div class="tab" data-tab="social-clara">Redes Sociais</div>
+            </div>
+            <div id="bio-clara" class="tab-content active">
+                <p>Clara Garcia é uma cantora e compositora brasileira que vem conquistando o público com sua voz marcante e interpretação autêntica. Suas músicas exploram sentimentos profundos e experiências do cotidiano, transmitindo emoção e proximidade em cada apresentação. Com talento e presença de palco envolvente, Clara se consolida como uma das novas promessas da música nacional, encantando plateias por onde passa.</p>
+            </div>
+            <div id="gallery-clara" class="tab-content gallery">
+                <img src="img/clara1.png" alt="Clara 1">
+                <img src="img/clara2.png" alt="Clara 2">
+            </div>
+            <div id="social-clara" class="tab-content">
+                <p>Instagram: <a href="https://instagram.com/claragarcia_oficial" style="color:#fff;">@claragarcia_oficial</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-pagode" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Pagode da Japa</h2>
+            <div class="tabs">
+                <div class="tab active" data-tab="bio-pagode">Biografia</div>
+                <div class="tab" data-tab="gallery-pagode">Galeria</div>
+                <div class="tab" data-tab="social-pagode">Redes Sociais</div>
+            </div>
+            <div id="bio-pagode" class="tab-content active">
+                <p>Pagode da Japa é um grupo que traz uma proposta inovadora ao samba e pagode, misturando tradição e modernidade em suas apresentações. Conhecidos pela energia contagiante e pela interação com o público, os shows do grupo se transformam em verdadeiras celebrações. Com carisma e musicalidade, o Pagode da Japa se destaca como uma das novas referências do gênero.</p>
+            </div>
+            <div id="gallery-pagode" class="tab-content gallery">
+                <img src="img/pagode1.png" alt="Pagode 1">
+                <img src="img/pagode2.png" alt="Pagode 2">
+            </div>
+            <div id="social-pagode" class="tab-content">
+                <p>Instagram: <a href="https://instagram.com/pagodedajapa" style="color:#fff;" target="_blank">@pagodedajapa</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-cinho" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Cinho</h2>
+            <div class="tabs">
+                <div class="tab active" data-tab="bio-cinho">Biografia</div>
+                <div class="tab" data-tab="gallery-cinho">Galeria</div>
+                <div class="tab" data-tab="social-cinho">Redes Sociais</div>
+            </div>
+            <div id="bio-cinho" class="tab-content active">
+                <p>Cinho é um cantor carismático que vem conquistando espaço no cenário musical com sua autenticidade e presença de palco envolvente. Suas interpretações transmitem emoção e verdade, aproximando-se do público de maneira única. Com estilo versátil e muita personalidade, Cinho é um artista em ascensão que promete marcar seu nome na música brasileira.</p>
+            </div>
+            <div id="gallery-cinho" class="tab-content gallery">
+                <img src="img/cinho1.png" alt="Cinho 1">
+                <img src="img/cinho2.png" alt="Cinho 2">
+            </div>
+            <div id="social-cinho" class="tab-content">
+                <p>Instagram: <a href="https://instagram.com/cantor_cinho" style="color:#fff;" target="_blank">@cantor_cinho</a></p>
+            </div>
+        </div>
+    </div>
+
+    <section id="sobre" class="sobre">
+        <h2>Sobre Nós</h2>
+        <p>A TOP HITS MUSIC é uma empresa dedicada à produção de eventos inesquecíveis e ao gerenciamento da carreira de artistas de destaque no cenário musical.</p>
+    </section>
+
+    <section id="contato" class="contato">
+        <h2>Contato</h2>
+        <p>Email: <a href="mailto:contato@tophitsmusic.com?subject=Duvidas" style+="color: #fff" target="_blank">contato@tophitsmusic.com</a></p>
+        <p>Telefone: <a href="https://api.whatsapp.com/send?phone=556298397545" style="color: #fff;" target="_blank">(62)9839-7545</a></p>
+    </section>
+
+    <footer>
+        <p>© 2025 TOP HITS MUSIC - Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Menu smooth scroll
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', e => {
+                e.preventDefault();
+                document.querySelector(link.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Abrir modal
+        document.querySelectorAll('.artist-card').forEach(card => {
+            card.addEventListener('click', () => {
+                document.getElementById(card.dataset.modal).style.display = 'block';
+            });
+        });
+
+        // Fechar modal
+        document.querySelectorAll('.close').forEach(span => {
+            span.addEventListener('click', () => {
+                span.parentElement.parentElement.style.display = 'none';
+            });
+        });
+
+        // Alternar abas
+        document.querySelectorAll('.tabs').forEach(tabGroup => {
+            tabGroup.querySelectorAll('.tab').forEach(tab => {
+                tab.addEventListener('click', () => {
+                    const parent = tab.parentElement.parentElement;
+                    tabGroup.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+                    parent.querySelectorAll('.tab-content').forEach(tc => tc.classList.remove('active'));
+                    parent.querySelector('#' + tab.dataset.tab).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

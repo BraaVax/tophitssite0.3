@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+header {
+    background-color: #111;
+    padding: 50px;
+    text-align: center;
+}
+header img {
+    height: 80px;
+}
+nav {
+    margin-top: 10px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+.eventos {
+    text-align: center;
+    padding: 50px 20px;
+}
+.eventos h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.artistastext {
+    text-align: center;
+    padding: 50px 20px;
+}
+.artistastext h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+.artists {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+.artist-card {
+    background-color: #111;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
+.artist-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.artist-card h3 {
+    margin-top: 15px;
+    font-size: 3rem;
+}
+.sobre, .contato {
+    padding: 40px;
+    text-align: center;
+}
+footer {
+    background-color: #111;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+.eventos button {
+    display: inline-block;
+    background: linear-gradient(135deg, #4caf50, #2e7d32);
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.botao-link:hover {
+    background: linear-gradient(135deg, #66bb6a, #388e3c);
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.botao-link:active {
+    transform: scale(0,95);
+}
