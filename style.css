@@ -24,11 +24,11 @@ nav a {
 .hero {
     text-align: center;
     padding: 50px 20px;
-    line-height: 0.5;
 }
 .hero h1 {
     font-size: 3.5rem;
     margin-bottom: 20px;
+    line-height: 0.5;
 }
 .eventos {
     text-align: center;
