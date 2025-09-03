@@ -37,6 +37,14 @@ nav a {
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
+.locação {
+    text-align: center;
+    padding: 50px 20px;
+}
+.locação h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
 .artistastext {
     text-align: center;
     padding: 50px 20px;
@@ -79,7 +87,7 @@ footer {
 
 .eventos button {
     display: inline-block;
-    background: linear-gradient(135deg, #4caf50, #2e7d32);
+    background: linear-gradient(180deg, #ffffff, #000000, #ffffff);
     color: white;
     text-decoration: none;
     padding: 12px 24px;
@@ -87,7 +95,20 @@ footer {
     font-size: 16px;
     font-weight: bold;
     transition: 0.3s;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 12px 12px rgba(255, 255, 255, 0.2);
+}
+
+.locação button {
+    display: inline-block;
+    background: linear-gradient(180deg, #ffffff, #000000, #ffffff);
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0px 12px 12px rgba(255, 255, 255, 0.2);
 }
 
 .botao-link:hover {
@@ -98,4 +119,50 @@ footer {
 
 .botao-link:active {
     transform: scale(0,95);
+}
+
+.eventos ul {
+  list-style: none;          /* Remove os bullets padrão */
+  padding: 0;
+  max-width: 800px;          /* Limita a largura do texto */
+  margin: 20px auto;         /* Centraliza na tela */
+  text-align: left;          /* Texto alinhado à esquerda */
+}
+
+.eventos ul li {
+  margin-bottom: 12px;       /* Espaço entre os itens */
+  font-size: 18px;           /* Deixa legível */
+  line-height: 1.6;          /* Espaçamento entre linhas */
+  position: relative;
+  padding-left: 30px;        /* Espaço para o ícone */
+}
+
+.eventos ul li::before {
+  content: "◉";             /* Ícone personalizado */
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.locação ul {
+  list-style: none;          /* Remove os bullets padrão */
+  padding: 0;
+  max-width: 800px;          /* Limita a largura do texto */
+  margin: 20px auto;         /* Centraliza na tela */
+  text-align: left;          /* Texto alinhado à esquerda */
+}
+
+.locação ul li {
+  margin-bottom: 12px;       /* Espaço entre os itens */
+  font-size: 18px;           /* Deixa legível */
+  line-height: 1.6;          /* Espaçamento entre linhas */
+  position: relative;
+  padding-left: 30px;        /* Espaço para o ícone */
+}
+
+.locação ul li::before {
+  content: "◉";             /* Ícone personalizado */
+  position: absolute;
+  left: 0;
+  top: 0;
 }
